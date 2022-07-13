@@ -1,0 +1,16 @@
+.topHeaderWrapper {
+	width: 100%;
+	height: 72px;
+}
+
+.leftHeaderWrapper {
+	height: 100%;
+	width: 64px;
+}
+
+.topHeaderWrapper,
+.leftHeaderWrapper {
+	position: absolute;
+	left: 0;
+	top: 0;
+}

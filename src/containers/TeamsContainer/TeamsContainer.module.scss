@@ -1,0 +1,83 @@
+@import '../../UIKit/_variables';
+
+.containerWrap {
+	width: 100%;
+	height: 100%;
+	padding: 8px;
+	display: flex;
+    flex-wrap: wrap;
+	
+	.emptyInfoWrap {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		.emptyInfo {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+	
+			&>* {
+				text-align: center;
+				font-family: Roboto;
+				font-size: 14px;
+				line-height: 25px;
+			}
+			h5 {
+				font-weight: bold;
+				margin-top: 42px;
+			}
+		}
+	}
+	
+}
+
+
+
+.popupAccept {
+	&:hover {
+		background: #0955C6;
+	}
+	&:active {
+		background: #0343A1;
+	}
+}
+
+.deletePopup {
+	&>div {
+		width: 314px;
+		height: 148px;
+		background: #FAFAFA;
+		box-shadow: 1px 4px 3px rgba(0, 0, 0, 0.15);
+		border-radius: 4px;
+		padding: 24px 24px 16px;
+	}
+	.deleteText {
+		font-size: 16px;
+		line-height: 130%;
+		margin-bottom: 32px;
+	}
+	.deletePopupBtns {
+		display: flex;
+		justify-content: flex-end;
+		button {
+			width: 88px;
+            height: 36px;
+			font-weight: bold;
+			font-size: 14px;
+			line-height: 16px;
+			border-radius: 4px;
+		}
+		.popupDelete{
+			&:hover {
+				background: #0955C6;
+			}
+			&:active {
+				background: #0343A1;
+			}
+		}
+	}
+}

@@ -1,0 +1,19 @@
+@import '../../UIKit/variables';
+
+.headerView {
+	background-color: $darkSky;
+	color: #fff;
+	padding: 15px 0;
+}
+
+.formWraper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 125px 0;
+	min-height: calc(100vh - 66px);
+}
+
+.warningIcon {
+	position: absolute;
+}

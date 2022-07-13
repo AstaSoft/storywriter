@@ -1,0 +1,41 @@
+@import "../../UIKit/variables";
+
+.notificationWrap {
+  position: fixed;
+  z-index: 15;
+  background: #fff;
+  left: 88px;
+  bottom: 24px;
+  width: 400px;
+  height: 110px;
+  display: flex;
+  box-sizing: border-box;
+  padding: 12px;
+  box-shadow: 1px 4px 3px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-size: 14px;
+
+  .icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 24px;
+  }
+  .dangerIcon {
+    background: url(../../images/icons/notifIconRed.svg) no-repeat;
+    background-size: contain;
+  }
+
+  .doneIcon {
+    background: url(../../images/icons/notifIconDone.svg) no-repeat;
+    background-size: contain;
+  }
+
+  .title {
+    margin-bottom: 13px;
+  }
+
+  .text {
+    line-height: 18px;
+    color: $defaultGrey;
+  }
+}

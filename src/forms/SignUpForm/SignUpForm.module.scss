@@ -1,0 +1,32 @@
+@import "../../UIKit/variables";
+
+.formBody {
+	background-color: #fff;
+	width: 450px;
+	padding: 36px 25px 48px;
+	border: 1px solid #dadce0;
+	box-sizing: border-box;
+	border-radius: 8px;
+
+	a{
+		display: block;
+		margin-top: 20px;
+		color: $grayIcon;
+		text-decoration: none;
+		text-align: center;
+		font-family: Roboto;
+		font-size: 14px;
+		line-height: 18px;
+	}
+}
+
+.header1 {
+	font-weight: normal;
+	margin-bottom: 56px;
+	text-align: center;
+}
+
+.signUpBtn {
+	padding-top: 36px;
+}
+

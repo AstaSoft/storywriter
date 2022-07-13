@@ -1,0 +1,68 @@
+@import '../../UIKit/variables';
+
+.fieldInlineWrapper {
+	display: block;
+	.searchIconWrap {
+		position: relative;
+		.searchIcon {
+			position: absolute;
+			top: -30px;
+			left: 10px;
+		}
+	}
+}
+
+.field {
+	width: 100%;
+	height: 44px;
+	border: 1px solid #dadce0;
+	box-sizing: border-box;
+	border-radius: 4px;
+	padding-left: 8px;
+	background-color: #fff;
+
+	&::placeholder {
+		font-size: 14px;
+		line-height: 18px;
+		color: #DADCE0;
+	}
+
+	&.iconInput {
+		padding-left: 40px;
+	}
+
+	&[type="search"]::-webkit-search-cancel-button {
+		display: none;
+	}
+
+	
+}
+
+.field:focus + .searchIconWrap { 
+	.searchIcon {
+		path {
+			fill: #454545;
+		}
+	}
+}
+
+.fieldName {
+	color: $textBlack;
+	margin-bottom: 12px;
+	display: block;
+	cursor: pointer;
+	font-family: Roboto;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.warningContainer {
+	height: 18px;
+}
+.warningIcon {
+	top: 8px;
+	bottom: 0;
+	right: 7px;
+	position: absolute;
+	margin: auto;
+}

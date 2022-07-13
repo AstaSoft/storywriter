@@ -1,0 +1,105 @@
+@import "../../UIKit/variables";
+
+.table {
+  font-size: 14px;
+  line-height: 18px;
+  &TopLine,
+  .item {
+    border-bottom: 1px solid $textGrey;
+    padding: 0 14px 8px 14px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    color: $black;
+
+    .col:first-child {
+      width: 42%;
+    }
+    .col:nth-child(2) {
+      width: 43%;
+    }
+    .col:last-child {
+      width: 15%;
+    }
+  }
+
+  .item {
+    border: none;
+    padding-top: 14px;
+    color: $defaultGrey;
+
+    .col:first-child {
+      display: flex;
+    }
+
+    span {
+      display: block;
+    }
+
+    &:hover {
+      background: $itemHover;
+      .action {
+        visibility: visible;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .userAvatar {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    margin-right: 7px;
+  }
+
+  .userName {
+    color: $black;
+    padding-bottom: 4px;
+  }
+
+  .mail {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .actionHeader {
+    width: 4px !important;
+  }
+
+  .action {
+    visibility: hidden;
+    width: 4px !important;
+    height: 18px;
+    background: url("../../images//icons/threeDots.svg") no-repeat;
+
+    &:hover {
+      background: url("../../images//icons/threeDotsActive.svg") no-repeat;
+    }
+  }
+  .dropdown {
+    z-index: 15;
+    position: absolute;
+    background: #fff;
+    display: flex;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    height: 40px;
+    right: 10px;
+    bottom: -20px;
+    width: 135px;
+    padding: 4px 0;
+    border-radius: 2px;
+    button {
+      border: none;
+      display: block;
+      width: 100%;
+      text-align: left;
+      background: none;
+      &:hover {
+        background: $itemHover;
+      }
+    }
+  }
+}

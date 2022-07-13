@@ -1,0 +1,53 @@
+@import "../../UIKit/variables";
+
+.list {
+  height: 44px;
+  width: 208px;
+  color: $button;
+  border-radius: 4px;
+  cursor: pointer;
+  overflow: hidden;
+  margin-bottom: 5px;
+  a {
+    width: 100%;
+    height: 100%;
+    color: $button;
+    display: block;
+    text-decoration: none;
+    padding: 8px !important;
+    display: flex;
+    align-items: center;
+
+    span {
+      color: $grayIcon;
+      path {
+        fill: #42526e;
+      }
+    }
+
+    &:hover {
+      background: $menuItemHover;
+    }
+    &.active {
+      background: $menuItemHover;
+
+      span {
+        color: $button;
+
+        path {
+          fill: $button;
+        }
+      }
+    }
+  }
+  .icon {
+    &svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .itemName {
+    margin-left: 16px;
+  }
+}

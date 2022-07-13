@@ -1,0 +1,43 @@
+@import "../../UIKit/variables";
+
+.pagination {
+	display: flex;
+	align-items: center;
+
+	.control {
+		width: 6.2px;
+		height: auto;
+		path {
+			fill: $defaultGrey;
+		}
+
+		&.disabled {
+			path {
+				fill: $textGrey;
+			}
+		}
+	}
+
+	.box {
+		margin: 0 15px;
+		display: flex;
+
+		.item {
+			width: 24px;
+			height: 24px;
+			border-radius: 2px;
+			font-size: 12px;
+			line-height: 14px;
+			color: $textBlack;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			&.selected {
+				box-shadow: 0px 0px 3px $textBlack;
+				background-color: $darkSky;
+				color: $white;
+			}
+		}
+	}
+}

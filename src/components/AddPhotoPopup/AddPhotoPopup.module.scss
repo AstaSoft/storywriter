@@ -1,0 +1,17 @@
+@import "../../UIKit/variables";
+
+.dropzoneWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 220px;
+  width: 384px;
+  border: 1px dashed $defaultGrey;
+  border-radius: 4px;
+  margin-bottom: 37px;
+
+  p{
+      font-size: 12px;
+  }
+}

@@ -1,0 +1,56 @@
+@import "../../UIKit/variables";
+
+.projectWrapper {
+  background-color: $white;
+  border: 1px solid $textGrey;
+  border-radius: 4px;
+  width: 248px;
+  height: 136px;
+  padding: 37px 29px 29px 12px;
+  margin: 24px;
+  position: relative;
+
+  a {
+    text-decoration: none;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .projectLogo {
+    width: 76px;
+    height: 70px;
+    margin-right: 11px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .projectName {
+    width: 120px;
+    height: 36px;
+    overflow: hidden;
+    color: $textDarkSky;
+    font-size: 24px;
+    line-height: 36px;
+    padding-bottom: 9px;
+    display: block;
+  }
+
+  .projectData {
+    font-family: Roboto;
+    font-size: 12px;
+    line-height: 14px;
+    color: $textBlack;
+    display: block;
+
+    &:not(:last-child) {
+      padding-bottom: 6px;
+    }
+  }
+
+  .menuWrapper {
+    position: absolute;
+    right: 4px;
+    bottom: 4px;
+  }
+}

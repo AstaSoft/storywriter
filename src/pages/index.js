@@ -1,0 +1,17 @@
+export { default as HomePage } from "./HomePage/HomePage";
+export { default as LoginPage } from "./LoginPage/LoginPage";
+export { default as TeamsPage } from "./TeamsPage/TeamsPage";
+export { default as SignUpPage } from "./SignUpPage/SignUpPage";
+export { default as ActorsPage } from "./ActorsPage/ActorsPage";
+export { default as MembersPage } from "./MembersPage/MembersPage";
+export { default as ProfilePage } from "./ProfilePage/ProfilePage";
+export { default as NotFoundPage } from "./NotFoundPage/NotFoundPage";
+export { default as ProjectsPage } from "./ProjectsPage/ProjectsPage";
+export { default as ReleasesPage } from "./ReleasesPage/ReleasesPage";
+export { default as DashboardPage } from "./DashboardPage/DashboardPage";
+export { default as DictionaryPage } from "./DictionaryPage/DictionaryPage";
+export { default as TeamProjectsPage } from "./TeamProjectsPage/TeamProjectsPage";
+export { default as TeamSettingsPage } from "./TeamSettingsPage/TeamSettingsPage";
+export { default as PasswordResetPage } from "./PasswordResetPage/PasswordResetPage";
+export { default as ProjectSettingsPage } from "./ProjectSettingsPage/ProjectSettingsPage";
+export { default as PasswordRecoveryPage } from "./PasswordRecoveryPage/PasswordRecoveryPage";

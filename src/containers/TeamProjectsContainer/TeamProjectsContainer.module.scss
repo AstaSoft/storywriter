@@ -1,0 +1,61 @@
+@import "../../UIKit/variables";
+
+.projects {
+  padding: 24px 25px 25px;
+
+  &Button {
+    border-radius: 4px;
+    font-weight: bold;
+  }
+
+  &Search {
+    display: flex;
+  }
+
+  &TableWrap {
+    margin: 27px 0 14px 0;
+  }
+
+  &BottomLine {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 14px;
+    padding: 0 calc(15% - 68px) 0 14px;
+  }
+  &Count {
+    font-size: 14px;
+    line-height: 18px;
+    color: $textBlack;
+  }
+
+  .projectsContent {
+    height: 100%;
+  }
+
+  .emptyWrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    .emptyInfo {
+      margin-top: 42px;
+      & > * {
+        text-align: center;
+        font-family: Roboto;
+        font-size: 14px;
+        line-height: 25px;
+      }
+      h5 {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.dropdownWrapper {
+  width: 200px;
+  #sorting {
+    width: 200px;
+  }
+}

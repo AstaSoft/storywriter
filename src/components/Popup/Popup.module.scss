@@ -1,0 +1,79 @@
+@import "../../UIKit/variables";
+
+.popup {
+  position: fixed;
+
+  left: 0;
+  right: 0;
+  top: 50%;
+  z-index: 100;
+  transform: translateY(-50%);
+
+}
+
+.inner {
+  margin: auto;
+  background-color: $white;
+  padding: 40px;
+
+  border-radius: 8px;
+  // border: 1px solid #dadce0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 480px;
+}
+
+.smallPopup {
+  padding: 24px 24px 16px 24px;
+  width: 314px;
+  height: 148px;
+}
+
+.title {
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.centered {
+  text-align: center !important;
+}
+
+.subtitle {
+  font-weight: bold;
+
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+.text {
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 32px;
+}
+
+.textSmallPopup {
+  margin: 0;
+}
+
+.dialogButtonsGroup {
+  width: 100% !important;
+  justify-content: flex-start !important;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.buttons {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+
+  &Group {
+    justify-content: space-between;
+    width: 224px;
+  }
+
+  button {
+    width: 135px;
+  }
+}

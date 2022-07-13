@@ -1,0 +1,46 @@
+@import "../../UIKit/variables";
+
+.leftMainHeader,
+.topMainHeader {
+  background-color: $textDarkSky;
+  width: 100%;
+  height: 100%;
+  color: $textWhite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topMainHeader {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.leftMainHeader {
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px 0 47px 0;
+
+  .topWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo {
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 36px;
+    padding-bottom: 40px;
+    display: block;
+    text-decoration: none;
+    color: white;
+  }
+  .searchBtn,
+  .addBtn {
+    cursor: pointer;
+  }
+  .searchBtn {
+    margin-bottom: 30px;
+  }
+}

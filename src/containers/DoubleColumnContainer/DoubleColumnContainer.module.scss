@@ -1,0 +1,13 @@
+@import "../../UIKit/variables";
+
+.wrapper {
+  display: flex;
+  height: 100%;
+  .col {
+    width: 60%;
+    &:first-child {
+      width: 40%;
+      border-right: 1px solid $textGrey;
+    }
+  }
+}

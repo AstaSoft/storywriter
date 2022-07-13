@@ -1,0 +1,50 @@
+.formBody {
+	background-color: #fff;
+	width: 450px;
+	padding: 36px 25px 46px;
+	border: 1px solid #dadce0;
+	box-sizing: border-box;
+	border-radius: 8px;
+}
+
+.header1 {
+	font-weight: normal;
+	margin-bottom: 56px;
+	text-align: center;
+}
+
+.forgotPassword {
+	text-align: right;
+	& > a {
+		font-family: Roboto;
+		font-size: 12px;
+		line-height: 14px;
+		color: #82888D;
+		text-decoration: none;
+		&:hover {
+			color: #2F80ED;
+		}
+		&:active {
+			color: #07449E;
+		}
+	}
+}
+
+.signUpBtn {
+	text-align: center;
+	margin-top: 24px;
+	& > a {
+		font-family: Roboto;
+		font-size: 14px;
+		line-height: 18px;
+		color: #42526E;
+		text-decoration: none;
+		&:hover {
+			color: #2F80ED;
+		}
+		&:active {
+			color: #07449E;
+		}
+	}
+}
+

@@ -1,0 +1,30 @@
+@import "./_variables";
+
+.mainly {
+  background-color: #e8e8e8;
+}
+
+.fieldWrapper {
+  display: block;
+  position: relative;
+  margin-bottom: 24px;
+
+  &.last {
+    margin-bottom: 38px;
+  }
+}
+
+
+// STYLES for text editor
+ul {
+  list-style: disc;
+}
+ol {
+  list-style: decimal;
+}
+strong{
+  font-weight: bold;
+}
+em{
+  font-style: italic;
+}

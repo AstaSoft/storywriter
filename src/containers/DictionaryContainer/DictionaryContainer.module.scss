@@ -1,0 +1,165 @@
+@import "../../UIKit/variables";
+
+.tabsWrapper,
+.contentWrapper {
+  height: 100%;
+  overflow-y: auto;
+}
+.tabsWrapper {
+  padding: 24px;
+
+  .noResult {
+    color: $defaultGrey;
+    line-height: 25px;
+    font-size: 14px;
+
+    span {
+      font-weight: bold;
+    }
+  }
+}
+
+// --------------------RightContainer-------------------------
+.contentWrapper {
+  padding: 24px;
+
+  .moreIcon {
+    cursor: pointer;
+  }
+
+  .contentHead {
+    display: flex;
+    justify-content: space-between;
+    h3 {
+      color: $textDarkSky;
+      font-size: 24px;
+      line-height: 36px;
+    }
+  }
+
+  .contentItem {
+    margin-top: 24px;
+    padding-bottom: 32px;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $textGrey;
+    }
+
+    h5 {
+      color: $textDarkSky;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    .fullTextItem {
+      color: $textDarkSky;
+      font-size: 14px;
+      line-height: 130%;
+    }
+
+    .links {
+      display: block;
+      color: $textBlue;
+      text-decoration: none;
+      font-size: 14px;
+      line-height: 16px;
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+
+    .emptyItem {
+      cursor: pointer;
+      color: $defaultGrey;
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    .addItem {
+      padding-top: 24px;
+    }
+  }
+}
+
+.contentDiscription {
+  h5 {
+    margin-bottom: 16px;
+  }
+}
+
+// -------------------------------------------------------------
+
+.tabWrapper {
+  width: 100%;
+  padding: 16px 3px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 4px;
+  &.activeTabWrapper {
+    background: #f4f5f7;
+  }
+
+  &:hover {
+    background: #f4f5f7;
+  }
+
+  .tabTitle {
+    font-size: 24px;
+    line-height: 36px;
+    display: block;
+    color: $textDarkSky;
+  }
+  .tabDesc {
+    font-size: 14px;
+    line-height: 18px;
+    padding-top: 18px;
+    display: block;
+    color: $textBlack;
+  }
+}
+.activeTabWrapper {
+  background-color: $itemHover;
+}
+
+.dictionarySearch {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 8px;
+}
+
+.deletePopup {
+  & > div {
+    width: 314px;
+    height: 148px;
+    background: #fafafa;
+    box-shadow: 1px 4px 3px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 24px 24px 16px;
+  }
+  .deleteText {
+    font-size: 16px;
+    line-height: 130%;
+    margin-bottom: 32px;
+  }
+  .deletePopupBtns {
+    display: flex;
+    justify-content: flex-end;
+    button {
+      width: 88px;
+      height: 36px;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 16px;
+      border-radius: 4px;
+    }
+    .popupDelete {
+      &:hover {
+        background: #0955c6;
+      }
+      &:active {
+        background: #0343a1;
+      }
+    }
+  }
+}

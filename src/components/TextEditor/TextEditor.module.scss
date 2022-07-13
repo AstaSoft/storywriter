@@ -1,0 +1,34 @@
+@import "../../UIKit/variables";
+
+.wrapperClass {
+  display: flex;
+  flex-direction: column-reverse;
+
+  .toolbarClass {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    .tool {
+      cursor: pointer;
+    }
+    .inlineWrapper {
+      display: flex;
+    }
+    .listWrapper {
+      display: flex;
+    }
+  }
+
+  .editorClass {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .hiddenToolbar {
+    display: none;
+  }
+}
+.placeholder {
+  color: $defaultGrey;
+}

@@ -1,0 +1,24 @@
+.formBody {
+	box-sizing: border-box;
+}
+
+.fieldWrapperPopup {
+	margin-bottom: 18px;
+}
+
+.lastInput {
+	margin-bottom: 47%;
+}
+
+.btnsWrap {
+	display: flex;
+	.popupAccept {
+		&:hover {
+			background: #0955C6;
+		}
+		&:active {
+			background: #0343A1;
+		}
+	}
+}
+
